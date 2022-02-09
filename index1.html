@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        
+    </style>
+</head>
+<body class="body">
+    <!-- This tool here is drawing/openboard tool and what we are doing in this tool is
+         is making some options like pencil, eraser, shapes, their stroke color -->
+    <div class="drawingtool">
+
+        <!-- /* Pencil*/ -->
+        <div ">
+            <img src="./resources-master/NewIcons/Black_Pencil.svg" id="pencil" alt=""
+                class="tool-img">
+        </div> 
+
+
+        <!-- /* Eraser */ -->
+        <div >
+            <img src="./resources-master/NewIcons/Eraser.svg" id="eraser" alt=""
+                class="tool-img">
+        </div> 
+
+
+        <!-- /* Shapes */ -->
+        <div class="tools tool3"> 
+            <div class="outer">
+                <i class="fas fa-square" id="rect"></i>
+                <i class="fas fa-grip-lines-vertical" id="line"></i>
+                <div class="tools3"></div>
+                <!-- /*rectangle = tools1, /* line = tools2, /* circle = tools3  -->
+            </div>
+        </div>
+
+
+        <!-- This is the tool through which size of stroke is changing. -->
+        <div class="size-change">
+            <div class="size sizem">
+                <div class="minusH minus"></div>
+            </div>
+            <div class="size sizep">
+                <div class="minusH plusV"></div>
+                <div class="plusH"></div>
+            </div>
+        </div>
+
+
+        <!-- This is upload and download tool. -->
+        <div>
+            <img src="./resources-master/NewIcons/Download.svg" id="download" class="tool-img">
+        </div>
+        <div>
+            <img src="./resources-master/NewIcons/Photo.svg" id="uploadbtn" class="tool-img">
+        </div> 
+        <input type="file" id="uploader" hidden="hidden" />
+
+        <div class="reun">
+            <div class="do1">
+                <img src="./resources-master/NewIcons/Redo.svg" id="redoId" class="tool-img">
+            </div>
+            <div class="do2">
+                <img src="./resources-master/NewIcons/Undo.svg" id="undoId" class="tool-img">
+            </div>
+        </div>
+        
+
+        <!-- Color div is here -->
+        <div class="choose-color">
+            <div class="dim red"></div>
+            <div class="dim blue"></div>
+            <div class="dim green"></div>
+        </div>
+
+    </div>
+
+    <canvas class="different"></canvas>
+</body>
+<script src="./index.js"></script>
+</html>
